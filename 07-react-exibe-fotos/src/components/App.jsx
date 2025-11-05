@@ -42,7 +42,9 @@ class App extends React.Component {
           <Busca onBuscaRealizada={this.onBuscaRealizada}/>
         </div>
         <div className="col-12">
-          <ListaImagens photos={this.state.photos}/>
+          <div className="grid">
+            <ListaImagens imageStyle="col-12 md:col-6 lg:col-4 xl:col-3" photos={this.state.photos}/>
+          </div>
         </div>
       </div>
     )
